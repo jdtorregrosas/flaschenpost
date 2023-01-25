@@ -1,0 +1,13 @@
+@import '../vars.scss';
+
+:host{
+  .container {
+    height: 70px;
+    background-color: $main-color;
+    width: 100%;
+
+    & .logo {
+      width: 225px;
+    }
+  }
+}
