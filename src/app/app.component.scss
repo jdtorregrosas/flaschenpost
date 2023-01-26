@@ -1,0 +1,70 @@
+@import "./vars.scss";
+
+:host {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 84px;
+    min-height: calc(100% - $header-height);
+
+    .tab-buttons {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .heading-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      .title {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $main-color;
+        margin-bottom: 8px;
+        text-align: center;
+
+        .name {
+          color: $dark-gray;
+        }
+      }
+
+      .link {
+        font-size: 14px;
+        color: $dark-gray;
+        text-align: center;
+      }
+    }
+
+    .filters-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 0 14px;
+      .sort {
+        cursor: pointer;
+        padding: 8px 16px;
+        background: white;
+        border-radius: 4px;
+        margin-right: 16px;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+      }
+      .filter {
+        display: flex;
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+    .tab-content {
+      max-width: 1026px;
+    }
+  }
+}

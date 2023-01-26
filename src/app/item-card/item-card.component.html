@@ -1,0 +1,8 @@
+<div @renderTrigger class="card-container" [class.small]="small">
+  <img [src]="imgUrl" />
+  <div *ngIf="!small" class="description">
+    <p class="name">{{name}}</p>
+    <p class="price">{{price}} Euro</p>
+    <p class="quantity">{{quantity}}</p>
+  </div>
+</div>

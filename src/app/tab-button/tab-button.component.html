@@ -1,0 +1,5 @@
+<div class="tab" [class.active]="active">
+  <app-book *ngIf="text === 'Detail'" [color]="active ? '#82BE3C': 'gray'" />
+  <app-bottle *ngIf="text === 'Bottles'" [color]="active ? '#82BE3C': 'gray'" />
+  <span class="text" [class.accent]="active">{{text}}</span>
+</div>

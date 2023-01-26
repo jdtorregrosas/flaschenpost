@@ -2,9 +2,19 @@
 
 :host{
   .container {
-    height: 70px;
+    height: $header-height;
     background-color: $main-color;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+
+    & .internal-container {
+      max-width: $breakpoint-desktop;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
 
     & .logo {
       width: 225px;

@@ -1,0 +1,40 @@
+@import "../vars.scss";
+
+:host {
+  .card-container {
+    margin: 0 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 186px;
+    width: 326px;
+    padding: 32px;
+    padding-left: 48px;
+    background-color: white;
+    border-radius: 4px;
+
+    &.small {
+      width: 186px;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      p {
+        margin: 0;
+      }
+
+      .name {
+        color: $main-color;
+        font-family: "TitilliumWeb-Bold";
+        text-align: end;
+        max-width: 180px;
+      }
+    }
+  }
+}

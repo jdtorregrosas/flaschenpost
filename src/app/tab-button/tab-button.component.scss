@@ -1,0 +1,25 @@
+@import "../vars.scss";
+
+:host {
+  .tab {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    margin: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .active {
+    color: $accent-color;
+    border-bottom: solid 2px $accent-color;
+  }
+  .accent {
+    color: $accent-color;
+  }
+  .text {
+    margin-left: 8px;
+  }
+}

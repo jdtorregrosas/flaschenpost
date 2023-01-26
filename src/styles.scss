@@ -1,5 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: url("./assets/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: url("./assets/TitilliumWeb-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #f3f3f3;
+  font-family: "TitilliumWeb-Regular";
+  height: 100%;
 }

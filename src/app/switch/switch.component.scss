@@ -1,0 +1,32 @@
+@import "../vars.scss";
+
+:host {
+  cursor: pointer;
+
+  .switch-container {
+    display: block;
+    width: 48px;
+    height: 24px;
+    background-color: $gray;
+    position: relative;
+    border-radius: 4px;
+
+    .switch {
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      background-color: $main-color;
+      border-radius: 4px;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      transition: transform 0.2s ease-in;
+
+      &.on {
+        background-color: $accent-color;
+        transform: translateX(24px);
+      }
+    }
+  }
+}

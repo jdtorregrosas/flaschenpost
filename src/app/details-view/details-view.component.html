@@ -1,0 +1,4 @@
+<div class="cards" *ngFor="let product of products">
+  <app-item-card [name]="product.name" [price]="product.article.pricePerUnit"
+    [quantity]="product.article.shortDescription" [imgUrl]="product.article.image" />
+</div>
